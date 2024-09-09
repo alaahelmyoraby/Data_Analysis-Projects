@@ -1,0 +1,1902 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0807.0327                               -->
+<workbook original-version='18.1' source-build='2024.2.2 (20242.24.0807.0327)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='Financialsample_17257450800240' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column alias='Total Revenue' caption='Select Matrix' datatype='integer' name='[Parameter 1]' param-domain-type='list' role='measure' type='quantitative' value='1'>
+        <calculation class='tableau' formula='1' />
+        <aliases>
+          <alias key='1' value='Total Revenue' />
+          <alias key='2' value='Total Expenses' />
+          <alias key='3' value='Profit Margin' />
+        </aliases>
+        <members>
+          <member alias='Total Revenue' value='1' />
+          <member alias='Total Expenses' value='2' />
+          <member alias='Profit Margin' value='3' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='Sheet1 (Financial Sample)' inline='true' name='federated.14pv3910d9vbeq1c2pp5118glxua' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Financial Sample' name='excel-direct.1j58pj71kfb7jh19z609j05jartc'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Mostafa Saad/Desktop/Financial Sample.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1j58pj71kfb7jh19z609j05jartc' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:P701:no:A1:P701:0' header='yes' outcome='2'>
+            <column datatype='string' name='Segment' ordinal='0' />
+            <column datatype='string' name='Country' ordinal='1' />
+            <column datatype='string' name='Product' ordinal='2' />
+            <column datatype='string' name='Discount Band' ordinal='3' />
+            <column datatype='real' name='Units Sold' ordinal='4' />
+            <column datatype='integer' name='Manufacturing Price' ordinal='5' />
+            <column datatype='integer' name='Sale Price' ordinal='6' />
+            <column datatype='real' name='Gross Sales' ordinal='7' />
+            <column datatype='real' name='Discounts' ordinal='8' />
+            <column datatype='real' name='Sales' ordinal='9' />
+            <column datatype='real' name='COGS' ordinal='10' />
+            <column datatype='real' name='Profit' ordinal='11' />
+            <column datatype='date' name='Date' ordinal='12' />
+            <column datatype='integer' name='Month Number' ordinal='13' />
+            <column datatype='string' name='Month Name' ordinal='14' />
+            <column datatype='string' name='Year' ordinal='15' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1j58pj71kfb7jh19z609j05jartc' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:P701:no:A1:P701:0' header='yes' outcome='2'>
+            <column datatype='string' name='Segment' ordinal='0' />
+            <column datatype='string' name='Country' ordinal='1' />
+            <column datatype='string' name='Product' ordinal='2' />
+            <column datatype='string' name='Discount Band' ordinal='3' />
+            <column datatype='real' name='Units Sold' ordinal='4' />
+            <column datatype='integer' name='Manufacturing Price' ordinal='5' />
+            <column datatype='integer' name='Sale Price' ordinal='6' />
+            <column datatype='real' name='Gross Sales' ordinal='7' />
+            <column datatype='real' name='Discounts' ordinal='8' />
+            <column datatype='real' name='Sales' ordinal='9' />
+            <column datatype='real' name='COGS' ordinal='10' />
+            <column datatype='real' name='Profit' ordinal='11' />
+            <column datatype='date' name='Date' ordinal='12' />
+            <column datatype='integer' name='Month Number' ordinal='13' />
+            <column datatype='string' name='Month Name' ordinal='14' />
+            <column datatype='string' name='Year' ordinal='15' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:P701:no:A1:P701:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Segment</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Segment]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Segment</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_899916BABD65410296FBEB7C08FAA7AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_899916BABD65410296FBEB7C08FAA7AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Product</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_899916BABD65410296FBEB7C08FAA7AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Discount Band</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Discount Band]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Discount Band</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_899916BABD65410296FBEB7C08FAA7AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Units Sold</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Units Sold]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Units Sold</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_899916BABD65410296FBEB7C08FAA7AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Manufacturing Price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Manufacturing Price]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Manufacturing Price</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_899916BABD65410296FBEB7C08FAA7AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sale Price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sale Price]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Sale Price</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_899916BABD65410296FBEB7C08FAA7AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gross Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Gross Sales]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Gross Sales</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_899916BABD65410296FBEB7C08FAA7AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Discounts</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Discounts]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Discounts</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_899916BABD65410296FBEB7C08FAA7AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sales]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Sales</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_899916BABD65410296FBEB7C08FAA7AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COGS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[COGS]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>COGS</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_899916BABD65410296FBEB7C08FAA7AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Profit]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Profit</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_899916BABD65410296FBEB7C08FAA7AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_899916BABD65410296FBEB7C08FAA7AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month Number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Month Number]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Month Number</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_899916BABD65410296FBEB7C08FAA7AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Month Name]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Month Name</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_899916BABD65410296FBEB7C08FAA7AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_899916BABD65410296FBEB7C08FAA7AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.14pv3910d9vbeq1c2pp5118glxua].[sum:COGS:qk]&quot;' value='Expenses' />
+        </aliases>
+      </column>
+      <column caption='Cogs' datatype='real' default-format='c&quot;$&quot;#,##0,,.00M;(&quot;$&quot;#,##0,,.00M)' name='[COGS]' role='measure' type='quantitative' />
+      <column caption='growth rate' datatype='real' name='[Calculation_787567043619835905]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='(SUM([Profit]) - LOOKUP(SUM([Profit]), -1)) / LOOKUP(SUM([Profit]), -1)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='matrix' datatype='real' name='[Calculation_787567043637706754]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='CASE [Parameters].[Parameter 1]&#13;&#10;  WHEN 1 THEN SUM([Profit])&#13;&#10;  WHEN 2 THEN SUM([COGS])&#13;&#10;  WHEN 3 THEN &#13;&#10;    (SUM([Profit]) / SUM([Gross Sales])) * 100&#13;&#10;  ELSE SUM([Profit])&#13;&#10;END' />
+      </column>
+      <column caption='Profit Margin' datatype='real' name='[Calculation_936185831769214977]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='(SUM([Profit]) / SUM([Gross Sales])) * 100' />
+      </column>
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+      <column datatype='real' name='[Discounts]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Gross Sales]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Manufacturing Price]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Month Number]' role='dimension' type='quantitative' />
+      <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+      <column datatype='real' default-format='n&quot;$&quot;#,##0,,.00M;-&quot;$&quot;#,##0,,.00M' name='[Profit]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Sale Price]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Segment]' role='dimension' type='nominal' />
+      <column datatype='real' name='[Units Sold]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_899916BABD65410296FBEB7C08FAA7AE]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[Sheet1_899916BABD65410296FBEB7C08FAA7AE]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Sheet1_899916BABD65410296FBEB7C08FAA7AE:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Segment]' derivation='None' name='[none:Segment:nk]' pivot='key' type='nominal' />
+      <column-instance column='[COGS]' derivation='Sum' name='[sum:COGS:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Discounts]' derivation='Sum' name='[sum:Discounts:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Gross Sales]' derivation='Sum' name='[sum:Gross Sales:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Manufacturing Price]' derivation='Sum' name='[sum:Manufacturing Price:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Sale Price]' derivation='Sum' name='[sum:Sale Price:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Units Sold]' derivation='Sum' name='[sum:Units Sold:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Calculation_787567043619835905]' derivation='User' name='[usr:Calculation_787567043619835905:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <column-instance column='[Calculation_787567043637706754]' derivation='User' name='[usr:Calculation_787567043637706754:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_936185831769214977]' derivation='User' name='[usr:Calculation_936185831769214977:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (Country)' hidden='true' name='[Action (Country)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Country]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (MONTH(Date))' hidden='true' name='[Action (MONTH(Date))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[tmn:Date:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Product)' hidden='true' name='[Action (Product)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Product]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_0f9un2p1bd9u111eh3qc61pg4twy.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Segment</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Segment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Segment</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Product</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Product]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Product</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Discount Band</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Discount Band]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Discount Band</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Units Sold</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Units Sold]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Units Sold</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>510</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Manufacturing Price</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Manufacturing Price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Manufacturing Price</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sale Price</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Sale Price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sale Price</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gross Sales</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Gross Sales]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gross Sales</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>550</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Discounts</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Discounts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Discounts</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>515</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sales</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Sales]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sales</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>559</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>COGS</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[COGS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>COGS</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>545</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Profit</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Profit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Profit</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>557</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Sheet1</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Month Number</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Month Number]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Month Number</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Month Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Month Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Month Name</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='0.943627' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' parameter-percentage='0.0563725' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#1a3636'>
+              <bucket>&quot;[federated.14pv3910d9vbeq1c2pp5118glxua].[sum:COGS:qk]&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;[federated.14pv3910d9vbeq1c2pp5118glxua].[sum:Sales:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.14pv3910d9vbeq1c2pp5118glxua].[__tableau_internal_object_id__].[cnt:Sheet1_899916BABD65410296FBEB7C08FAA7AE:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.14pv3910d9vbeq1c2pp5118glxua].[sum:Manufacturing Price:qk]&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;[federated.14pv3910d9vbeq1c2pp5118glxua].[usr:Calculation_787567043637706754:qk]&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;[federated.14pv3910d9vbeq1c2pp5118glxua].[sum:Units Sold:qk]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[federated.14pv3910d9vbeq1c2pp5118glxua].[sum:Discounts:qk]&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;[federated.14pv3910d9vbeq1c2pp5118glxua].[usr:Calculation_936185831769214977:qk]&quot;</bucket>
+            </map>
+            <map to='#d6bd98'>
+              <bucket>&quot;[federated.14pv3910d9vbeq1c2pp5118glxua].[sum:Profit:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.14pv3910d9vbeq1c2pp5118glxua].[sum:Profit:qk]:1&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;[federated.14pv3910d9vbeq1c2pp5118glxua].[sum:Sale Price:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.14pv3910d9vbeq1c2pp5118glxua].[usr:Calculation_787567043619835905:qk]&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;[federated.14pv3910d9vbeq1c2pp5118glxua].[sum:Gross Sales:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[yr:Date:ok]' type='palette'>
+            <map to='#737356'>
+              <bucket>2014</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>2013</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Segment:nk]' type='palette'>
+            <map to='#1a3636'>
+              <bucket>&quot;Channel Partners&quot;</bucket>
+            </map>
+            <map to='#40534c'>
+              <bucket>&quot;Enterprise&quot;</bucket>
+            </map>
+            <map to='#677d7a'>
+              <bucket>&quot;Government&quot;</bucket>
+            </map>
+            <map to='#9c876f'>
+              <bucket>&quot;Midmarket&quot;</bucket>
+            </map>
+            <map to='#aaaa7f'>
+              <bucket>&quot;Small Business&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Egypt&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column alias='Total Revenue' caption='Select Matrix' datatype='integer' name='[Parameter 1]' param-domain-type='list' role='measure' type='quantitative' value='1'>
+          <calculation class='tableau' formula='1' />
+          <aliases>
+            <alias key='1' value='Total Revenue' />
+            <alias key='2' value='Total Expenses' />
+            <alias key='3' value='Profit Margin' />
+          </aliases>
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_899916BABD65410296FBEB7C08FAA7AE'>
+            <properties context=''>
+              <relation connection='excel-direct.1j58pj71kfb7jh19z609j05jartc' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:P701:no:A1:P701:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Segment' ordinal='0' />
+                  <column datatype='string' name='Country' ordinal='1' />
+                  <column datatype='string' name='Product' ordinal='2' />
+                  <column datatype='string' name='Discount Band' ordinal='3' />
+                  <column datatype='real' name='Units Sold' ordinal='4' />
+                  <column datatype='integer' name='Manufacturing Price' ordinal='5' />
+                  <column datatype='integer' name='Sale Price' ordinal='6' />
+                  <column datatype='real' name='Gross Sales' ordinal='7' />
+                  <column datatype='real' name='Discounts' ordinal='8' />
+                  <column datatype='real' name='Sales' ordinal='9' />
+                  <column datatype='real' name='COGS' ordinal='10' />
+                  <column datatype='real' name='Profit' ordinal='11' />
+                  <column datatype='date' name='Date' ordinal='12' />
+                  <column datatype='integer' name='Month Number' ordinal='13' />
+                  <column datatype='string' name='Month Name' ordinal='14' />
+                  <column datatype='string' name='Year' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_F6975D482A4A40E5A7328C6A1CD9297C]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='quarter-date' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Segment' />
+        <param name='target' value='quarter-date' />
+      </command>
+    </action>
+    <action caption='Filter 1 (generated)' name='[Action3_C01886942F8946C39AE08BAE6FEDFAA6]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard' type='sheet' worksheet='country-profit' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action4_0988D0B545284DA0A54D1C1C53115779]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard' type='sheet' worksheet='profit-cogs' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action5_459DFAB7E7194EDF9ABB2F0B0F3DA4CE]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard' type='sheet' worksheet='product-profit' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard' />
+      </command>
+    </action>
+    <action caption='Highlight 2 (generated)' name='[Action5_5ABD6F6BDE41449AA854FE6A50BD40FE]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='profit-cogs' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Measure Names' />
+        <param name='target' value='profit-cogs' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action6_57AD718170834831AEE418F3E8445BF9]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard' type='sheet' worksheet='quarter-date' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 5 (generated)' name='[Action7_3201B26F86744C69BCB5A6DFB507855E]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard' type='sheet' worksheet='Expenses of Segments Overtime' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Expenses of Segments Overtime'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Tableau bool' fontsize='11'>Expenses of Segments Overtime</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Financial Sample)' name='federated.14pv3910d9vbeq1c2pp5118glxua' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14pv3910d9vbeq1c2pp5118glxua'>
+            <column caption='Cogs' datatype='real' default-format='c&quot;$&quot;#,##0,,.00M;(&quot;$&quot;#,##0,,.00M)' name='[COGS]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Segment]' role='dimension' type='nominal' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Segment]' derivation='None' name='[none:Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[COGS]' derivation='Sum' name='[sum:COGS:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.14pv3910d9vbeq1c2pp5118glxua].[Action (Country)]'>
+            <groupfilter function='level-members' level='[Country]' user:ui-action-filter='[Action3_C01886942F8946C39AE08BAE6FEDFAA6]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.14pv3910d9vbeq1c2pp5118glxua].[Action (Product)]'>
+            <groupfilter function='level-members' level='[Product]' user:ui-action-filter='[Action5_459DFAB7E7194EDF9ABB2F0B0F3DA4CE]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.14pv3910d9vbeq1c2pp5118glxua].[mn:Date:ok]' filter-group='3'>
+            <groupfilter function='level-members' level='[mn:Date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.14pv3910d9vbeq1c2pp5118glxua].[Action (Country)]</column>
+            <column>[federated.14pv3910d9vbeq1c2pp5118glxua].[mn:Date:ok]</column>
+            <column>[federated.14pv3910d9vbeq1c2pp5118glxua].[Action (Product)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.14pv3910d9vbeq1c2pp5118glxua].[sum:COGS:qk]' scope='rows' value='Expenses' />
+            <format attr='display' class='0' field='[federated.14pv3910d9vbeq1c2pp5118glxua].[sum:COGS:qk]' scope='rows' value='false' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-size' field='[federated.14pv3910d9vbeq1c2pp5118glxua].[sum:COGS:qk]' value='5' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' scope='cols' value='8' />
+            <format attr='font-weight' field='[federated.14pv3910d9vbeq1c2pp5118glxua].[none:Segment:nk]' value='bold' />
+            <format attr='color' field='[federated.14pv3910d9vbeq1c2pp5118glxua].[none:Segment:nk]' value='#333333' />
+            <format attr='font-size' field='[federated.14pv3910d9vbeq1c2pp5118glxua].[yr:Date:ok]' value='8' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.14pv3910d9vbeq1c2pp5118glxua].[yr:Date:ok]' />
+              <text column='[federated.14pv3910d9vbeq1c2pp5118glxua].[sum:COGS:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14pv3910d9vbeq1c2pp5118glxua].[sum:COGS:qk]</rows>
+        <cols>([federated.14pv3910d9vbeq1c2pp5118glxua].[none:Segment:nk] / [federated.14pv3910d9vbeq1c2pp5118glxua].[yr:Date:ok])</cols>
+      </table>
+      <simple-id uuid='{6D4B168D-A8E6-40BE-B396-8BD70D04765A}' />
+    </worksheet>
+    <worksheet name='Product'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Financial Sample)' name='federated.14pv3910d9vbeq1c2pp5118glxua' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14pv3910d9vbeq1c2pp5118glxua'>
+            <column caption='Cogs' datatype='real' default-format='c&quot;$&quot;#,##0,,.00M;(&quot;$&quot;#,##0,,.00M)' name='[COGS]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+            <column datatype='real' default-format='n&quot;$&quot;#,##0,,.00M;-&quot;$&quot;#,##0,,.00M' name='[Profit]' role='measure' type='quantitative' />
+            <column-instance column='[Product]' derivation='None' name='[none:Product:nk]' pivot='key' type='nominal' />
+            <column-instance column='[COGS]' derivation='Sum' name='[sum:COGS:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.14pv3910d9vbeq1c2pp5118glxua].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14pv3910d9vbeq1c2pp5118glxua].[sum:COGS:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14pv3910d9vbeq1c2pp5118glxua].[sum:Profit:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.14pv3910d9vbeq1c2pp5118glxua].[none:Product:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Product:nk]' member='&quot;Amarilla&quot;' />
+              <groupfilter function='member' level='[none:Product:nk]' member='&quot;Carretera&quot;' />
+              <groupfilter function='member' level='[none:Product:nk]' member='&quot;Montana&quot;' />
+              <groupfilter function='member' level='[none:Product:nk]' member='&quot;Paseo&quot;' />
+              <groupfilter function='member' level='[none:Product:nk]' member='&quot;Velo&quot;' />
+              <groupfilter function='member' level='[none:Product:nk]' member='&quot;VTT&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.14pv3910d9vbeq1c2pp5118glxua].[none:Product:nk]</column>
+            <column>[federated.14pv3910d9vbeq1c2pp5118glxua].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.14pv3910d9vbeq1c2pp5118glxua].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14pv3910d9vbeq1c2pp5118glxua].[Multiple Values]</rows>
+        <cols>([federated.14pv3910d9vbeq1c2pp5118glxua].[none:Product:nk] / [federated.14pv3910d9vbeq1c2pp5118glxua].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{E98D641E-0D4D-4003-B3B4-372851EB2A44}' />
+    </worksheet>
+    <worksheet name='Segment'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='14'>Segments</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Financial Sample)' name='federated.14pv3910d9vbeq1c2pp5118glxua' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column alias='Total Revenue' caption='Select Matrix' datatype='integer' name='[Parameter 1]' param-domain-type='list' role='measure' type='quantitative' value='1'>
+              <calculation class='tableau' formula='1' />
+              <aliases>
+                <alias key='1' value='Total Revenue' />
+                <alias key='2' value='Total Expenses' />
+                <alias key='3' value='Profit Margin' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.14pv3910d9vbeq1c2pp5118glxua'>
+            <column caption='Cogs' datatype='real' default-format='c&quot;$&quot;#,##0,,.00M;(&quot;$&quot;#,##0,,.00M)' name='[COGS]' role='measure' type='quantitative' />
+            <column caption='matrix' datatype='real' name='[Calculation_787567043637706754]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='CASE [Parameters].[Parameter 1]&#13;&#10;  WHEN 1 THEN SUM([Profit])&#13;&#10;  WHEN 2 THEN SUM([COGS])&#13;&#10;  WHEN 3 THEN &#13;&#10;    (SUM([Profit]) / SUM([Gross Sales])) * 100&#13;&#10;  ELSE SUM([Profit])&#13;&#10;END' />
+            </column>
+            <column datatype='real' name='[Gross Sales]' role='measure' type='quantitative' />
+            <column datatype='real' default-format='n&quot;$&quot;#,##0,,.00M;-&quot;$&quot;#,##0,,.00M' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Segment]' role='dimension' type='nominal' />
+            <column-instance column='[Segment]' derivation='None' name='[none:Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_787567043637706754]' derivation='User' name='[usr:Calculation_787567043637706754:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.14pv3910d9vbeq1c2pp5118glxua].[usr:Calculation_787567043637706754:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.14pv3910d9vbeq1c2pp5118glxua].[none:Segment:nk]' value='135' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.14pv3910d9vbeq1c2pp5118glxua].[none:Segment:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14pv3910d9vbeq1c2pp5118glxua].[usr:Calculation_787567043637706754:qk]</rows>
+        <cols>[federated.14pv3910d9vbeq1c2pp5118glxua].[none:Segment:nk]</cols>
+      </table>
+      <simple-id uuid='{25F7A03B-1531-4A58-B7DC-7ADD5957D229}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{7F0261A6-2FDF-454E-ADA4-043DE162F032}' />
+    </worksheet>
+    <worksheet name='country-profit'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Tableau bool' fontsize='11'>Profit Per Country</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Financial Sample)' name='federated.14pv3910d9vbeq1c2pp5118glxua' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.14pv3910d9vbeq1c2pp5118glxua'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+            <column datatype='real' default-format='n&quot;$&quot;#,##0,,.00M;-&quot;$&quot;#,##0,,.00M' name='[Profit]' role='measure' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.14pv3910d9vbeq1c2pp5118glxua].[Action (Product)]'>
+            <groupfilter function='level-members' level='[Product]' user:ui-action-filter='[Action5_459DFAB7E7194EDF9ABB2F0B0F3DA4CE]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.14pv3910d9vbeq1c2pp5118glxua].[mn:Date:ok]' filter-group='3'>
+            <groupfilter function='level-members' level='[mn:Date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.14pv3910d9vbeq1c2pp5118glxua].[mn:Date:ok]</column>
+            <column>[federated.14pv3910d9vbeq1c2pp5118glxua].[Action (Product)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.14pv3910d9vbeq1c2pp5118glxua].[Longitude (generated)]' field-type='quantitative' max='2305680.2882072832' min='-14240239.119442452' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.14pv3910d9vbeq1c2pp5118glxua].[Latitude (generated)]' field-type='quantitative' max='12715690.399450324' min='41091.524821431376' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.14pv3910d9vbeq1c2pp5118glxua].[sum:Profit:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#e2e4e1</color>
+                <color>#d3d8d2</color>
+                <color>#c5cbc3</color>
+                <color>#b7bfb4</color>
+                <color>#a9b3a6</color>
+                <color>#9ca698</color>
+                <color>#8f9a8b</color>
+                <color>#828d7e</color>
+                <color>#758171</color>
+                <color>#697565</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.14pv3910d9vbeq1c2pp5118glxua].[none:Country:nk]' />
+              <color column='[federated.14pv3910d9vbeq1c2pp5118glxua].[sum:Profit:qk]' />
+              <geometry column='[federated.14pv3910d9vbeq1c2pp5118glxua].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='5' />
+                <format attr='font-family' value='Tableau Semibold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14pv3910d9vbeq1c2pp5118glxua].[Latitude (generated)]</rows>
+        <cols>[federated.14pv3910d9vbeq1c2pp5118glxua].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{FF2B219A-3835-4E25-8BD9-C0C784B079C0}' />
+    </worksheet>
+    <worksheet name='product-profit'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Tableau pool' fontsize='11'>Profit Margin Per Product</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Financial Sample)' name='federated.14pv3910d9vbeq1c2pp5118glxua' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14pv3910d9vbeq1c2pp5118glxua'>
+            <column caption='Profit Margin' datatype='real' name='[Calculation_936185831769214977]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='(SUM([Profit]) / SUM([Gross Sales])) * 100' />
+            </column>
+            <column datatype='real' name='[Gross Sales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+            <column datatype='real' default-format='n&quot;$&quot;#,##0,,.00M;-&quot;$&quot;#,##0,,.00M' name='[Profit]' role='measure' type='quantitative' />
+            <column-instance column='[Product]' derivation='None' name='[none:Product:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_936185831769214977]' derivation='User' name='[usr:Calculation_936185831769214977:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.14pv3910d9vbeq1c2pp5118glxua].[none:Product:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Product:nk]' member='&quot;Amarilla&quot;' />
+              <groupfilter function='member' level='[none:Product:nk]' member='&quot;Carretera&quot;' />
+              <groupfilter function='member' level='[none:Product:nk]' member='&quot;Montana&quot;' />
+              <groupfilter function='member' level='[none:Product:nk]' member='&quot;Paseo&quot;' />
+              <groupfilter function='member' level='[none:Product:nk]' member='&quot;Velo&quot;' />
+              <groupfilter function='member' level='[none:Product:nk]' member='&quot;VTT&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.14pv3910d9vbeq1c2pp5118glxua].[none:Product:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.14pv3910d9vbeq1c2pp5118glxua].[usr:Calculation_936185831769214977:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.14pv3910d9vbeq1c2pp5118glxua].[none:Product:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
+            <format attr='title' class='0' field='[federated.14pv3910d9vbeq1c2pp5118glxua].[usr:Calculation_936185831769214977:qk]' scope='cols' value='Profit Margin %' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.14pv3910d9vbeq1c2pp5118glxua].[sum:Profit:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#d2dede</color>
+                <color>#b6cbcb</color>
+                <color>#9cb8b8</color>
+                <color>#83a6a6</color>
+                <color>#6d9393</color>
+                <color>#588080</color>
+                <color>#466e6e</color>
+                <color>#355b5b</color>
+                <color>#264848</color>
+                <color>#1a3636</color>
+              </color-palette>
+            </encoding>
+            <encoding attr='color' field='[federated.14pv3910d9vbeq1c2pp5118glxua].[usr:Calculation_936185831769214977:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#e6e3df</color>
+                <color>#dbd5ce</color>
+                <color>#d0c8be</color>
+                <color>#c5bbae</color>
+                <color>#baaf9f</color>
+                <color>#afa291</color>
+                <color>#a49683</color>
+                <color>#998a76</color>
+                <color>#8e7f69</color>
+                <color>#84745e</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.14pv3910d9vbeq1c2pp5118glxua].[usr:Calculation_936185831769214977:qk]' />
+              <text column='[federated.14pv3910d9vbeq1c2pp5118glxua].[sum:Profit:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14pv3910d9vbeq1c2pp5118glxua].[none:Product:nk]</rows>
+        <cols>[federated.14pv3910d9vbeq1c2pp5118glxua].[usr:Calculation_936185831769214977:qk]</cols>
+      </table>
+      <simple-id uuid='{37133537-CFA9-4133-8D7A-29316AECCA67}' />
+    </worksheet>
+    <worksheet name='profit-cogs'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Tableau pool' fontsize='12'>Expenses/Profit Overtime </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Financial Sample)' name='federated.14pv3910d9vbeq1c2pp5118glxua' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14pv3910d9vbeq1c2pp5118glxua'>
+            <column caption='Cogs' datatype='real' default-format='c&quot;$&quot;#,##0,,.00M;(&quot;$&quot;#,##0,,.00M)' name='[COGS]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+            <column datatype='real' default-format='n&quot;$&quot;#,##0,,.00M;-&quot;$&quot;#,##0,,.00M' name='[Profit]' role='measure' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[COGS]' derivation='Sum' name='[sum:COGS:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.14pv3910d9vbeq1c2pp5118glxua].[Action (Country)]'>
+            <groupfilter function='level-members' level='[Country]' user:ui-action-filter='[Action3_C01886942F8946C39AE08BAE6FEDFAA6]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.14pv3910d9vbeq1c2pp5118glxua].[Action (Product)]'>
+            <groupfilter function='level-members' level='[Product]' user:ui-action-filter='[Action5_459DFAB7E7194EDF9ABB2F0B0F3DA4CE]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.14pv3910d9vbeq1c2pp5118glxua].[mn:Date:ok]' filter-group='3'>
+            <groupfilter function='level-members' level='[mn:Date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.14pv3910d9vbeq1c2pp5118glxua].[Action (Country)]</column>
+            <column>[federated.14pv3910d9vbeq1c2pp5118glxua].[mn:Date:ok]</column>
+            <column>[federated.14pv3910d9vbeq1c2pp5118glxua].[Action (Product)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.14pv3910d9vbeq1c2pp5118glxua].[sum:Profit:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='title' class='0' field='[federated.14pv3910d9vbeq1c2pp5118glxua].[tmn:Date:qk]' scope='cols' value='Months' />
+            <format attr='title' class='0' field='[federated.14pv3910d9vbeq1c2pp5118glxua].[sum:COGS:qk]' scope='rows' value='Expenses' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-width' value='0' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='stroke-size' id='refline0' value='1' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='solid' />
+            <format attr='stroke-color' id='refline0' value='#8cd17d4b' />
+            <format attr='font-style' id='refline0' value='italic' />
+            <format attr='font-weight' id='refline0' value='bold' />
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+            <format attr='stroke-size' id='refline1' value='1' />
+            <format attr='stroke-color' id='refline1' value='#8cd17d4b' />
+            <format attr='line-visibility' id='refline1' value='on' />
+            <format attr='line-pattern-only' id='refline1' value='solid' />
+            <format attr='font-weight' id='refline1' value='bold' />
+            <format attr='font-size' id='refline1' value='10' />
+            <format attr='font-style' id='refline1' value='italic' />
+            <format attr='text-align' id='refline1' value='left' />
+            <format attr='font-size' id='refline0' value='9' />
+          </style-rule>
+          <style-rule element='refband'>
+            <format attr='fill-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.14pv3910d9vbeq1c2pp5118glxua].[:Measure Names]' />
+            </encodings>
+            <reference-line axis-column='[federated.14pv3910d9vbeq1c2pp5118glxua].[sum:COGS:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-table' value-column='[federated.14pv3910d9vbeq1c2pp5118glxua].[sum:COGS:qk]' z-order='1' />
+            <reference-line axis-column='[federated.14pv3910d9vbeq1c2pp5118glxua].[sum:Profit:qk]' enable-instant-analytics='true' formula='average' id='refline1' label-type='automatic' probability='95' scope='per-table' value-column='[federated.14pv3910d9vbeq1c2pp5118glxua].[sum:Profit:qk]' z-order='2' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.14pv3910d9vbeq1c2pp5118glxua].[sum:COGS:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.14pv3910d9vbeq1c2pp5118glxua].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.14pv3910d9vbeq1c2pp5118glxua].[sum:Profit:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.14pv3910d9vbeq1c2pp5118glxua].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.14pv3910d9vbeq1c2pp5118glxua].[sum:COGS:qk] + [federated.14pv3910d9vbeq1c2pp5118glxua].[sum:Profit:qk])</rows>
+        <cols>[federated.14pv3910d9vbeq1c2pp5118glxua].[tmn:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{F6145A87-0E5E-4266-9203-25E024935532}' />
+    </worksheet>
+    <worksheet name='quarter-date'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Tableau bool' fontsize='11'>Expenses of Segment Per Quarter</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Financial Sample)' name='federated.14pv3910d9vbeq1c2pp5118glxua' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14pv3910d9vbeq1c2pp5118glxua'>
+            <column caption='Cogs' datatype='real' default-format='c&quot;$&quot;#,##0,,.00M;(&quot;$&quot;#,##0,,.00M)' name='[COGS]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Segment]' role='dimension' type='nominal' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Segment]' derivation='None' name='[none:Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date]' derivation='Quarter' name='[qr:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[COGS]' derivation='Sum' name='[sum:COGS:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.14pv3910d9vbeq1c2pp5118glxua].[Action (Country)]'>
+            <groupfilter function='level-members' level='[Country]' user:ui-action-filter='[Action3_C01886942F8946C39AE08BAE6FEDFAA6]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.14pv3910d9vbeq1c2pp5118glxua].[Action (Product)]'>
+            <groupfilter function='level-members' level='[Product]' user:ui-action-filter='[Action5_459DFAB7E7194EDF9ABB2F0B0F3DA4CE]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.14pv3910d9vbeq1c2pp5118glxua].[mn:Date:ok]' filter-group='3'>
+            <groupfilter function='level-members' level='[mn:Date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.14pv3910d9vbeq1c2pp5118glxua].[none:Segment:nk]' direction='DESC' using='[federated.14pv3910d9vbeq1c2pp5118glxua].[sum:COGS:qk]' />
+          <slices>
+            <column>[federated.14pv3910d9vbeq1c2pp5118glxua].[Action (Country)]</column>
+            <column>[federated.14pv3910d9vbeq1c2pp5118glxua].[mn:Date:ok]</column>
+            <column>[federated.14pv3910d9vbeq1c2pp5118glxua].[Action (Product)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.14pv3910d9vbeq1c2pp5118glxua].[sum:COGS:qk]' scope='rows' value='Expenses' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.14pv3910d9vbeq1c2pp5118glxua].[none:Segment:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.14pv3910d9vbeq1c2pp5118glxua].[sum:COGS:qk]</rows>
+        <cols>[federated.14pv3910d9vbeq1c2pp5118glxua].[qr:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{2CFD17D8-6EBE-4A69-8E1A-548994F6D910}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#ffffff' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='Sheet1 (Financial Sample)' name='federated.14pv3910d9vbeq1c2pp5118glxua' />
+      </datasources>
+      <datasource-dependencies datasource='federated.14pv3910d9vbeq1c2pp5118glxua'>
+        <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+        <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='42210' id='3' name='profit-cogs' w='53402' x='603' y='17935' />
+        <zone h='41123' id='9' name='product-profit' w='45909' x='54091' y='16667' />
+        <zone h='38949' id='11' name='country-profit' w='22944' x='519' y='60870' />
+        <zone h='3080' id='8' leg-item-layout='horz' name='profit-cogs' pane-specification-id='1' param='[federated.14pv3910d9vbeq1c2pp5118glxua].[:Measure Names]' show-title='false' type-v2='color' w='26061' x='8312' y='28261' />
+        <zone h='40580' id='14' name='Expenses of Segments Overtime' w='43030' x='23636' y='60688' />
+        <zone h='43478' id='19' name='quarter-date' w='33333' x='66667' y='56884' />
+        <zone h='8696' id='22' mode='slider' name='quarter-date' param='[federated.14pv3910d9vbeq1c2pp5118glxua].[mn:Date:ok]' type-v2='filter' w='30390' x='952' y='9420' />
+        <zone h='7609' id='24' leg-item-layout='horz' name='quarter-date' pane-specification-id='0' param='[federated.14pv3910d9vbeq1c2pp5118glxua].[none:Segment:nk]' type-v2='color' w='52814' x='38788' y='10507' />
+        <zone forceUpdate='true' h='9058' id='33' type-v2='text' w='60311' x='1898' y='181'>
+          <formatted-text>
+            <run bold='true' fontsize='20'>Financial Sample |Microsoft</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1750' minheight='1750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='37' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97102' id='36' param='vert' type-v2='layout-flow' w='98622' x='689' y='1449'>
+                <zone forceUpdate='true' h='9058' id='33' type-v2='text' w='60311' x='1898' y='181'>
+                  <formatted-text>
+                    <run bold='true' fontsize='20'>Financial Sample |Microsoft</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42210' id='3' is-fixed='true' name='profit-cogs' w='53402' x='603' y='17935'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3080' id='8' leg-item-layout='horz' name='profit-cogs' pane-specification-id='1' param='[federated.14pv3910d9vbeq1c2pp5118glxua].[:Measure Names]' show-title='false' type-v2='color' w='26061' x='8312' y='28261'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38768' id='9' is-fixed='true' name='product-profit' w='45909' x='54091' y='19022'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8696' id='22' mode='slider' name='quarter-date' param='[federated.14pv3910d9vbeq1c2pp5118glxua].[mn:Date:ok]' type-v2='filter' w='30390' x='952' y='9420'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43478' id='19' is-fixed='true' name='quarter-date' w='33333' x='66667' y='56884'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7609' id='24' leg-item-layout='horz' name='quarter-date' pane-specification-id='0' param='[federated.14pv3910d9vbeq1c2pp5118glxua].[none:Segment:nk]' type-v2='color' w='52814' x='38788' y='10507'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40580' id='14' is-fixed='true' name='Expenses of Segments Overtime' w='43030' x='23636' y='60688'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38949' id='11' is-fixed='true' name='country-profit' w='22944' x='519' y='60870'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{4CE18687-BF34-4691-89AC-EE14225302CF}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='profit-cogs'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.14pv3910d9vbeq1c2pp5118glxua].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5869FF11-81E3-403D-8ED8-24C30B26AD23}' />
+    </window>
+    <window class='worksheet' name='product-profit'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.14pv3910d9vbeq1c2pp5118glxua].[usr:Calculation_936185831769214977:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A5159879-6949-4B82-98CE-5FE4B660247B}' />
+    </window>
+    <window class='worksheet' name='Product'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.14pv3910d9vbeq1c2pp5118glxua].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2DFAA2F3-8197-4E1D-A08F-FC88AC88B66B}' />
+    </window>
+    <window class='worksheet' name='country-profit'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.14pv3910d9vbeq1c2pp5118glxua].[sum:Profit:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DE1D3E58-548C-4E83-90C9-C5A1FB6ABF7E}' />
+    </window>
+    <window class='worksheet' name='quarter-date'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='slider' param='[federated.14pv3910d9vbeq1c2pp5118glxua].[mn:Date:ok]' type='filter' />
+            <card pane-specification-id='0' param='[federated.14pv3910d9vbeq1c2pp5118glxua].[none:Segment:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{79021087-F380-4CE8-A6A6-BE5E911D9AAC}' />
+    </window>
+    <window class='worksheet' name='Expenses of Segments Overtime'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.14pv3910d9vbeq1c2pp5118glxua].[yr:Date:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{78CD7BC0-2FFE-4B07-8E76-43C7BB6A3EC8}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard'>
+      <viewpoints>
+        <viewpoint name='Expenses of Segments Overtime'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='country-profit'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='product-profit' />
+        <viewpoint name='profit-cogs'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='quarter-date'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='9' />
+      <simple-id uuid='{80B93503-2A6E-410F-86BE-552301C406C0}' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{66148DA9-A530-453E-B4D7-3CFB4FF47149}' />
+    </window>
+    <window class='worksheet' name='Segment'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='list' param='[Parameters].[Parameter 1]' type='parameter' />
+            <card pane-specification-id='0' param='[federated.14pv3910d9vbeq1c2pp5118glxua].[none:Segment:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{08A2B729-70AB-4406-9E2C-EE66E0DA3799}' />
+    </window>
+  </windows>
+</workbook>
